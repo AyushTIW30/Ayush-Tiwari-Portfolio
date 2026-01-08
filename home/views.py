@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from .models import Project, Resume
 
+from django.http import HttpResponse
+from django.contrib.auth.models import User
+
 # HOME PAGE
 def index(request):
     skills = [
@@ -32,3 +35,10 @@ def resume(request):
 # CONTACT PAGE
 def contact(request):
     return render(request, "contact.html")
+
+
+def create_admin(request):
+    if not User.objects.filter(username="admin").exists():
+        User.objects.create_superuser("admin", "admin@example.com", "Password123")
+        return HttpResponse("Admin created successfully!")
+    return HttpResponse("Admin already exists!")
