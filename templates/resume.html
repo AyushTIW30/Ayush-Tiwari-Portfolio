@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- BACKGROUND SECTION -->
+<section class="py-5"
+    style="
+        background: url('{% static 'pexels-anniroenkae-2382738.jpg' %}') no-repeat center center/cover;
+        min-height: 100vh;
+    ">
+
+
+    <div class="container">
+
+        <!-- WHITE RESUME CARD -->
+        <div class="bg-white p-5 rounded shadow-lg mx-auto" style="max-width: 900px;">
+
+            <!-- HEADER -->
+            <div class="text-center mb-4">
+                <h1 class="fw-bold text-success">Ayush Tiwari</h1>
+                <p class="text-muted fs-5">
+                    Software Developer | Python | Java | JavaScript | Backend & Data Enthusiast
+                </p>
+
+                {% if resume %}
+                <a href="https://drive.google.com/uc?export=download&id=1BLmsEuZvXljWcS_34YzC3wjiZ0HlOivV"
+            class="btn btn-success mt-2" download>
+                Download Resume (PDF)
+            </a>
+
+                {% endif %}
+            </div>
+
+            <hr>
+
+            <!-- CONTACT -->
+            <section class="mb-4">
+                <h4 class="fw-bold text-success">Contact</h4>
+                <ul class="list-unstyled">
+                    <li>📧 Email:
+                        <a href="mailto:ayushtiwariatcoon@gmail.com">ayushtiwariatcoon@gmail.com</a>
+                    </li>
+                    <li>📱 Phone: +91 83051 17567</li>
+                    <li>🌐 GitHub:
+                        <a href="https://github.com/AyushTIW30" target="_blank">github.com/AyushTIW30</a>
+                    </li>
+                    <li>🔗 LinkedIn:
+                        <a href="https://linkedin.com/in/ayush-tiwari-2301222ba" target="_blank">
+                            linkedin.com/in/ayush-tiwari-2301222ba
+                        </a>
+                    </li>
+                    <li>📍 India</li>
+                </ul>
+            </section>
+
+            <!-- SUMMARY -->
+            <section class="mb-4">
+                <h4 class="fw-bold text-success">Professional Summary</h4>
+                <p>
+                    Final-year B.Tech (IT) student with hands-on experience in software development using Python, Java,
+                    and JavaScript. Skilled in backend development, REST APIs, databases (MySQL, PostgreSQL),
+                    deployment on Render and Railway, and software project design.
+                    Experienced in AI-powered data analytics applications, machine learning prediction systems,
+                    and URL shortener backends. Strong foundation in DSA, problem-solving, and application scalability,
+                    suitable for Software Developer, Backend Developer, or Python Developer roles.
+                </p>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="mb-4">
+                <h4 class="fw-bold text-success">Technical Skills</h4>
+
+                <p><strong>Programming Languages:</strong> Python, Java, JavaScript, SQL</p>
+                <p><strong>Web & Backend:</strong> Django, Streamlit, FastAPI, REST APIs, HTML5, CSS3</p>
+                <p><strong>Databases:</strong> MySQL, PostgreSQL</p>
+                <p><strong>Data & Machine Learning:</strong> Pandas, NumPy, Matplotlib, Seaborn, Plotly, scikit-learn, PyTorch</p>
+                <p><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Jupyter Notebook</p>
+                <p><strong>Cloud & Deployment:</strong> Render, Railway, Vercel, Microsoft Azure (Basics)</p>
+                <p><strong>Core Concepts:</strong> Data Structures & Algorithms, OOPs, DBMS, API Design</p>
+            </section>
+
+            <!-- PROJECTS -->
+            <section class="mb-4">
+    <h4 class="fw-bold text-success">Projects</h4>
+
+    <p><strong>AI-Powered Data Analytics App</strong></p>
+    <ul>
+        <li>Interactive web app to upload CSV/Excel/JSON files, perform automatic insights, filter data, and generate dynamic charts with natural language queries.</li>
+        <li>Tech Stack: Python, Streamlit, Pandas, Plotly</li>
+    </ul>
+
+    <p><strong>Bangalore House Price Prediction (Machine Learning)</strong></p>
+    <ul>
+        <li>Developed a regression-based ML model to predict house prices using feature engineering and data preprocessing techniques.</li>
+        <li>Tech Stack: Python, Pandas, NumPy, Matplotlib, scikit-learn</li>
+    </ul>
+
+    <p><strong>Django-Based Portfolio Website</strong></p>
+    <ul>
+        <li>Designed and deployed a personal portfolio website showcasing projects and resume with a responsive green-themed UI.</li>
+        <li>Tech Stack: Django, HTML, CSS, JavaScript, Vercel</li>
+    </ul>
+
+    <p><strong>URL Shortener System (Backend-Focused)</strong></p>
+    <ul>
+        <li>Backend service for URL shortening, redirection, and basic analytics, demonstrating real-world backend application skills.</li>
+        <li>Tech Stack: Python, Django / FastAPI, PostgreSQL, Render</li>
+    </ul>
+</section>
+
+
+            <!-- EDUCATION -->
+            <section class="mb-4">
+                <h4 class="fw-bold text-success">Education</h4>
+                <p><strong>B.Tech – Information Technology</strong></p>
+                <p>Baderi Global Institute of Engineering and Management (2022 – 2026)</p>
+            </section>
+
+            <!-- CERTIFICATIONS -->
+            <section class="mb-4">
+                <h4 class="fw-bold text-success">Certifications</h4>
+                <ul>
+                    <li>Python Programming & Data Science Certifications</li>
+                    <li>Data Analytics, Data Visualization & Data Cleaning</li>
+                    <li>Prompt Engineering (IBM & Cognitive Class)</li>
+                    <li>Microsoft Copilot Training (Microsoft Learn)</li>
+                </ul>
+            </section>
+
+            <!-- ACHIEVEMENTS -->
+            <section>
+                <h4 class="fw-bold text-success">Achievements & Activities</h4>
+                <ul>
+                    <li>Solved 250+ DSA problems</li>
+                    <li>2nd Prize – College Hackathon (AI Traffic Management)</li>
+                    <li>Active GitHub contributor</li>
+                    <li>Multiple real-world backend & ML projects</li>
+                </ul>
+            </section>
+
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

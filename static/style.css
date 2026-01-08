@@ -1,0 +1,127 @@
+/* =====================
+   GLOBAL
+===================== */
+body {
+    background-color: #eef7f1;     /* calm soft green */
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    color: #1f2933;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+    background-color: #1f4d3a !important;  /* muted dark green */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #ecfdf5 !important;
+}
+
+.nav-link {
+    color: #d1fae5 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* =====================
+   HEADINGS
+===================== */
+h1, h2, h3, h4 {
+    color: #1f4d3a;
+    font-weight: 700;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.container {
+    max-width: 1100px;
+}
+
+/* =====================
+   CARDS
+===================== */
+.card {
+    background-color: #fdfefe;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transition: all 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 35px rgba(0,0,0,0.09);
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.btn-dark {
+    background-color: #1f4d3a;
+    border: none;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.btn-dark:hover {
+    background-color: #163b2c;
+}
+
+/* =====================
+   LINKS
+===================== */
+a {
+    color: #1f4d3a;
+}
+
+a:hover {
+    color: #163b2c;
+}
+
+/* =====================
+   RESUME BLOCK
+===================== */
+pre {
+    background-color: #f5f9f7;
+    border-left: 4px solid #1f4d3a;
+    padding: 22px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+    background-color: #1f4d3a;
+    color: #d1fae5;
+}
+/* =====================
+   CONTACT BACKGROUND
+===================== */
+.contact-bg {
+    background-image: url("../static/AI-powered.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: calc(100vh - 70px);
+}
+
+.contact-overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    min-height: calc(100vh - 70px);
+    padding: 40px 0;
+}
+
+/* Cards thoda zyada readable */
+.contact-bg .card {
+    background-color: #ffffff;
+}
+
