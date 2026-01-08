@@ -107,7 +107,7 @@ footer {
    CONTACT BACKGROUND
 ===================== */
 .contact-bg {
-    background-image: url("../static/AI-powered.jpg");
+    background-image: url("/static/AI-powered.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

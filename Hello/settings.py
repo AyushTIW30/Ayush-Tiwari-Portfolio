@@ -29,10 +29,13 @@ INSTALLED_APPS = [
     'home',
 ]
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': os.getenv('da9romfbr'),
-    'API_KEY': os.getenv('687792859457859'),
-    'API_SECRET': os.getenv('2naGDlTTYbUmWKqLaZzyi5xPYs0'),
+    'CLOUD_NAME': os.getenv('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.getenv('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.getenv('CLOUDINARY_API_SECRET'),
 }
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
@@ -101,13 +104,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "static"
 ]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-
 
 # ================= MEDIA =================
 MEDIA_URL = '/media/'
